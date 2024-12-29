@@ -99,4 +99,12 @@ class ProductController extends Controller
         $sale->delete();
         return redirect('/products');
     }
+
+
+    public function product_report()
+{
+    $productData = ProductType::withSum('products as total_quantity', 'quantity')->get();
+    
+    return view('dashboard.products.product_info', compact('productData'));
+}
 }

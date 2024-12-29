@@ -62,6 +62,12 @@
                                 <i class="bi bi-chevron-double-right"></i>
                                 <p>Product</p>
                             </a>
+                            
+
+                            <a href="{{route('product.report')}}" class="nav-link ">
+                                <i class="bi bi-chevron-double-right"></i>
+                                <p>Product Report</p>
+                            </a>
                         </li>
                     </ul>
                 </li>

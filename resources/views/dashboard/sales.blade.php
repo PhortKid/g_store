@@ -7,7 +7,7 @@
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                       Today</div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800">{{$today_sale}}</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">Tsh. {{$today_sale}}/=</div>
                 </div>
                 <div class="col-auto">
                     <i class="fas  fa-2x text-gray-300"></i>
@@ -26,7 +26,7 @@
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                         Monthly</div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800">{{$month_sale}}</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">Tsh. {{$month_sale}}/=</div>
                 </div>
                 <div class="col-auto">
                     <i class="fas  fa-2x text-gray-300"></i>
@@ -44,7 +44,7 @@
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                     Year</div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800">{{$year_sale}}</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">Tsh. {{$year_sale}}/=</div>
                 </div>
                 <div class="col-auto">
                     <i class="fas  fa-2x text-gray-300"></i>
@@ -62,7 +62,7 @@
                 <div class="col mr-2">
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                     All</div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800">{{$all_time_sale}}</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">Tsh. {{$all_time_sale}}/=</div>
                 </div>
                 <div class="col-auto">
                     <i class="fas  fa-2x text-gray-300"></i>

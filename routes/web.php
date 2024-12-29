@@ -39,7 +39,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('sales', SaleController::class);
 
     Route::get('/approved_sales', [SaleController::class,'approved'])->name('zilizouzwa');
-   
+    
+    Route::get('/product_report', [ProductController::class,'product_report'])->name('product.report');
     
     Route::get('/', function () {
         return redirect('/dash/');
@@ -53,5 +54,8 @@ Route::get('/sample',function(){
     return view('dashboard.index');
 });
 
+Route::get('/soon',function(){
+    return "Contact System admin";
+})->name('soon');
 
 require __DIR__.'/auth.php';
