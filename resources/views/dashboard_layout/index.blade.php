@@ -26,7 +26,7 @@
 
 
     <!-- chosen -->
-    <link href="{{asset('chosen/chosen.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/chosen.min.css')}}" rel="stylesheet" />
 
     <link rel="stylesheet" href="{{asset('fontawesome-free/css/all.min.css')}}">
 
@@ -241,7 +241,7 @@
         <footer class="app-footer" > <!--begin::To the end-->
             <div class="float-end d-none d-sm-inline">By</div> <!--end::To the end--> <!--begin::Copyright--> <strong>
                 Copyright &copy; 2024-2025&nbsp;
-                <a href="#" class="text-decoration-none">G store </a>.
+                <a href="#" class="text-decoration-none">Free market</a>.
             </strong>
             All rights reserved.
             <!--end::Copyright-->

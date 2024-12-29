@@ -23,7 +23,7 @@ class ProductController extends Controller
 
 
   
-
+/*
     public function store(Request $request)
     {
         $request->validate([
@@ -39,6 +39,33 @@ class ProductController extends Controller
 
         return redirect('products');
     }
+
+*/
+    public function store(Request $request)
+{
+    $request->validate([
+        'name' => 'required',
+        'product_type_id' => 'required|exists:product_types,id',
+        'quantity' => 'required|integer|min:1', // Hakikisha ni namba chanya
+        'purchase_price' => 'required|numeric',
+        'sale_price' => 'required|numeric',
+        'description' => 'required',
+    ]);
+
+    // Hifadhi mara kadhaa kulingana na quantity
+    for ($i = 0; $i < $request->quantity; $i++) {
+        Product::create([
+            'name' => $request->name,
+            'product_type_id' => $request->product_type_id,
+            'quantity' => 1, // Weka quantity kuwa 1 kwa kila bidhaa
+            'purchase_price' => $request->purchase_price,
+            'sale_price' => $request->sale_price,
+            'description' => $request->description,
+        ]);
+    }
+
+    return redirect('products')->with('success', 'Products inserted successfully!');
+}
 
 
     public function update(Request $request, string $id)
@@ -63,6 +90,8 @@ class ProductController extends Controller
 
         return redirect('products');
     }
+
+    
 
     public function destroy(string $id)
     {

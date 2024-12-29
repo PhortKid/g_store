@@ -37,6 +37,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('product_types', ProductTypeController::class);
     Route::resource('products', ProductController::class);
     Route::resource('sales', SaleController::class);
+
+    Route::get('/approved_sales', [SaleController::class,'approved'])->name('zilizouzwa');
    
     
     Route::get('/', function () {

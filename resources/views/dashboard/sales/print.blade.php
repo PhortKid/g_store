@@ -16,8 +16,10 @@
                         <strong>Client Name:</strong> {{ $sale->client_name }}<br>
                         <strong>Total Price:</strong> {{ number_format($sale->total_price, 2) }}<br>
                         <strong>Sale Date:</strong> {{ $sale->created_at->format('d-m-Y H:i') }}<br>
-                        <strong>Product Information:</strong><br>
-                        <p>{{ $sale->product_info }}</p>
+                        <strong>Product Information:</strong> {{ $sale->product->description }}<br>
+                        <strong>Sale description:</strong> {{ $sale->product_info }}<br>
+                        <strong>Brand:</strong> Free Market<br>
+                        
                     </div>
                 </div>
                 <hr>

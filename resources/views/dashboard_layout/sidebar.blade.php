@@ -7,7 +7,7 @@
             <img src="{{asset('logo/logo.jpeg')}}" alt="G Store Logo" class="brand-image opacity-75 shadow rounded-circle ">
             <!--end::Brand Image-->
             <!--begin::Brand Text-->
-            <span class="brand-text fw-light">G Store</span>
+            <span class="brand-text fw-light">Free Market</span>
             <!--end::Brand Text-->
         </a>
         <!--end::Brand Link-->
@@ -80,6 +80,11 @@
                             <a href="{{route('sales.index')}}" class="nav-link ">
                                 <i class="bi bi-chevron-double-right"></i>
                                 <p>Manage sales</p>
+                            </a>
+                            
+                            <a href="{{route('zilizouzwa')}}" class="nav-link ">
+                                <i class="bi bi-chevron-double-right"></i>
+                                <p>sold</p>
                             </a>
                          
                         </li>

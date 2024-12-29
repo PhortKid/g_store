@@ -37,7 +37,7 @@
     </div>
 
     <div class="mb-3">
-        <label for="description" class="form-label">Product Description</label>
+        <label for="description" class="form-label">Product Description/IMEI</label>
         <textarea name="description" class="form-control" rows="3" required></textarea>
     </div>
 

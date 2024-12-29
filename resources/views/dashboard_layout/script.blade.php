@@ -87,7 +87,19 @@
     }
 </script>
 
+<script src="https://portal.lipilimatower.co.tz/chosen/chosen.jquery.min.js" ></script>
+<script src="https://portal.lipilimatower.co.tz/chosen/popper.min.js" ></script>
 
-
-
-
+<script>
+    $(document).ready(
+        function()
+        {
+            $('.chosen-select').chosen(
+                {
+                    width:'100%',
+                    placeholder_text_single:'select room'
+                }
+            );
+        }
+    );
+</script>

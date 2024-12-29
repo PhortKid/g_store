@@ -13,6 +13,7 @@
             <th>Product Name</th>
             <th>Client Name</th>
             <th>Total Price</th>
+            <th>Description</th>
             <th>Sale Date</th>
             <th>Action</th>
         </tr>
@@ -23,13 +24,14 @@
             <td>{{ $sale->product->name }}</td>
             <td>{{ $sale->client_name }}</td>
             <td>{{ number_format($sale->total_price, 2) }}</td>
+            <td>{{ $sale->product_info }}</td>
             <td>{{ $sale->created_at->format('d-m-Y H:i') }}</td>
             <td>
             
             <a href='#'  data-bs-toggle="modal" data-bs-target="#ViewSale{{$sale->id}}"><i class='fa fa-eye text-primary'></i></a> | 
-            
+            @if(Auth::user()->role =="SuperAdmin")
             <a href='#'  data-bs-toggle="modal" data-bs-target="#ApproveSales{{$sale->id}}"><i class='fa fa-check text-primary'></i></a> | 
-            
+            @endif
             <a href='#'  data-bs-toggle="modal" data-bs-target="#DeleteSales{{$sale->id}}"><i class='fa fa-trash text-danger'></i></a>
             </td>
 
@@ -62,12 +64,14 @@
     @csrf
     <div class="mb-3">
         <label for="product_id" class="form-label">Product</label>
-        <select name="product_id" class="form-select" required>
+        <select name="product_id" class="form-select chosen-select" required>
             @foreach ($products as $product)
-                <option value="{{ $product->id }}">{{ $product->name }}</option>
+                <option value="{{ $product->id }}">{{ $product->name }}- {{ $product->description }}</option>
             @endforeach
         </select>
     </div>
+
+
 
     <div class="mb-3">
         <label for="client_name" class="form-label">Client Name</label>

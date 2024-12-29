@@ -61,4 +61,11 @@ class SaleController extends Controller
 
         return redirect('/sales');
     }
+
+    public function approved(){
+        $sales = Sale::all();
+        $products=Product::where('is_approved','1')->get();
+        return view('dashboard.sales.approved')->with('sales',$sales)->with('products',$products);
+        //return 1;
+    }
 }

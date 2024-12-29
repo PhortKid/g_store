@@ -16,14 +16,15 @@
   </div> 
 <div class="table-responsive">
 
-<table   class="table table-bordered" id="example1" width="100%" cellspacing="0">
+<table   class="table table-bordered " id="example1" width="100%" cellspacing="0">
 
-<thead class="table-dark">
+<thead class="text-primar">
 <tr>
 <th>#</th>
 <th>Username</th>
 <th>Purchase</th>
 <th>Sale Prrice</th>
+<th>Description/IMEI</th>
 <th>Date</th>
 <th>Action</th>
 
@@ -31,7 +32,7 @@
 </thead>
 
 
-<tbody class="table table-striped table-hover ">
+<tbody class="table table-striped table-hover  ">
 
   <?php $i=1;  ?>
 @if(count($products)>0)
@@ -42,6 +43,7 @@
     <td>{{$product->name}} </td>
     <td>{{$product->purchase_price}}</td>
     <td>{{$product->sale_price}}</td>
+    <td>{{$product->description}}</td>
     <td>{{$product->created_at}}</td>
     
     
