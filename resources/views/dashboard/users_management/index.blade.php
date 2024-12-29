@@ -18,7 +18,7 @@
 
 <table   class="table table-bordered" id="example1" width="100%" cellspacing="0">
 
-<thead class="table-dark">
+<thead class="">
 <tr>
 <th>#</th>
 <th>Username</th>
