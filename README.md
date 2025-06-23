@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Phort</h1>
 <h3 align="center">A passionate frontend developer from Tanzania</h3>
 
-- 🔭 I’m currently working on [Lipilima Project](link)
+- 🔭 I’m currently working on [Ndoto](link)
 
 - 🌱 I’m currently learning **ML,AI**
 
